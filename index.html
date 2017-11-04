@@ -178,6 +178,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   can be found below.
 </p>
 
+
+<h3>Connect to student servers from Windows</h3>
+
 <p>
   On the College computers, <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a> 
   and <a href="http://www.straightrunning.com/XmingNotes/">XMing</a> should be already installed.
@@ -195,6 +198,20 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Log in with your username and password and you will get a black window with a command prompt. 
   This is called a terminal, and we will learn what to do with this in the next two days.
 </p>
+
+
+<h3>Connect to student servers from a Mac</h3>
+
+<p>If you don't have an <a href="http://x.org">X.Org X Window System</a> running on your Mac, install <a href="http://xquartz.macosforge.org/landing">XQuartz</a> and reboot.</p>
+
+<p>Start the <em>Terminal</em> app or <em>iTerm</em> and connect to the student server with X11 forwarding, which means any graphical windows will be launched on your Mac:</p>
+
+<pre><code>ssh -Y &lt;user&gt;@student.ese.ic.ac.uk</code></pre>
+
+<p>Replace <code>&lt;user&gt;</code> with your username and login with your password. This gets you a terminal running on the remote server, which you can use in the same way as in the tutorial i.e. following the instructions above.</p>
+
+
+<h3>If you want to install everything yourself</h3>
 
 <p>
   To participate in a
